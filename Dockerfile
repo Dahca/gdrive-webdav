@@ -1,8 +1,7 @@
 # Build
 FROM golang:latest
-COPY . /go/src/github.com/mikea/gdrive-webdav/
-RUN go get -v github.com/mikea/gdrive-webdav
-
+COPY . /go/src/github.com/Dahca/gdrive-webdav
+RUN go get -v github.com/Dahca/gdrive-webdav
 
 # Run
 FROM debian:stable-slim  
