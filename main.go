@@ -52,7 +52,8 @@ func main() {
 	log.Info("Listening on: ", *addr)
 
 	//err := http.ListenAndServe(*addr, nil)
-	err := http.ListenAndServe(*addr, limit(mux))
+	//err := http.ListenAndServe(*addr, limit(mux))
+	err := http.ListenAndServe(*addr, mux)
 	if err != nil {
 		log.Errorf("Error starting HTTP server: %v", err)
 		os.Exit(-1)
@@ -73,7 +74,6 @@ func limit(next http.Handler) http.Handler {
 			http.Error(w, http.StatusText(429), http.StatusTooManyRequests)
 			return
 		}
-		log.Errorf("No limit!")
 
 		next.ServeHTTP(w, r)
 	})

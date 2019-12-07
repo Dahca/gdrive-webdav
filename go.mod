@@ -17,6 +17,7 @@ require (
 	github.com/klauspost/asmfmt v1.2.1 // indirect
 	github.com/koron/iferr v0.0.0-20180615142939-bb332a3b1d91 // indirect
 	github.com/mdempsky/gocode v0.0.0-20191202075140-939b4a677f2f // indirect
+	github.com/mikea/gdrive-webdav v0.0.0-20191110185354-c9746698b8a8
 	github.com/pmylund/go-cache v2.1.0+incompatible
 	github.com/rogpeppe/godef v1.1.1 // indirect
 	github.com/sirupsen/logrus v1.4.2
