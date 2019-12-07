@@ -52,8 +52,7 @@ func main() {
 	log.Info("Listening on: ", *addr)
 
 	//err := http.ListenAndServe(*addr, nil)
-	//err := http.ListenAndServe(*addr, limit(mux))
-	err := http.ListenAndServe(*addr, mux)
+	err := http.ListenAndServe(*addr, limit(mux))
 	if err != nil {
 		log.Errorf("Error starting HTTP server: %v", err)
 		os.Exit(-1)

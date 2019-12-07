@@ -81,6 +81,7 @@ func (fs *fileSystem) OpenFile(ctx context.Context, name string, flag int, perm 
 	}
 
 	if flag == os.O_RDONLY {
+		log.Errorf("OpenFile %v %v %v", name, flag, perm)
 		file, err := fs.getFile(name, false)
 		if err != nil {
 			return nil, err
