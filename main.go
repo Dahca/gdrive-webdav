@@ -8,7 +8,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/mikea/gdrive-webdav/gdrive"
+	"github.com/Dahca/gdrive-webdav/gdrive"
 	log "github.com/sirupsen/logrus"
 	"golang.org/x/net/context"
 	"golang.org/x/net/webdav"
